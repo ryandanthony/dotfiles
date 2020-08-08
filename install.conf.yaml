@@ -1,10 +1,26 @@
 - clean: []
-- link: {}
+- link:
+    ~/.gitconfig:
+      path: gitconfig
+      force: true
 - shell: []
+- snap-classic:
+  - code
+  - rider
+  - datagrip
+  - helm
+- snap:
+  - chromium
+  - chromium-ffmpeg
+  - htop
+  - postman
+  - hiri
+  - docker
+  - drawio
+  - microk8s
+  - powershell
 - vscode:
-    eamodio.gitlens:
-        status: install
-    EditorConfig.EditorConfig:
-        status: install
-- apt-get:
-    - vscode
+  eamodio.gitlens:
+    status: install
+  EditorConfig.EditorConfig:
+    status: install
