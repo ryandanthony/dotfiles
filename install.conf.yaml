@@ -9,12 +9,13 @@
   - rider
   - datagrip
   - helm
+  - dotnet-sdk
 - snap:
+  - hiri
   - chromium
   - chromium-ffmpeg
   - htop
   - postman
-  - hiri
   - docker
   - drawio
   - microk8s
