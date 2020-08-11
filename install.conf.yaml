@@ -21,5 +21,9 @@
   - docker
   - drawio
 - vscode:
-  - eamodio.gitlens
-  - EditorConfig.EditorConfig
+    eamodio.gitlens:
+        status: install
+        insiders: false
+    EditorConfig.EditorConfig:
+        status: install
+        insiders: false
