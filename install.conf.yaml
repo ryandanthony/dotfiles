@@ -3,7 +3,7 @@
     ~/.gitconfig:
       path: gitconfig
       force: true
-- shell: []
+
 - snap-classic:
   - code
   - rider
@@ -27,3 +27,12 @@
     EditorConfig.EditorConfig:
         status: install
         insiders: false
+- aptget:
+    ca-certificates:
+    curl:
+    apt-transport-https:
+    lsb-release:
+    gnupg:
+    htop:
+- shell: 
+  - [./scripts/install-azure-cli.sh, Installing Azure Cli]
