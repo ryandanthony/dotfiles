@@ -2,9 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "dotbot-apt-get"]
-	path = dotbot-apt-get
-	url = https://github.com/rubenvereecken/dotbot-apt-get
 [submodule "dotbot-vscode"]
 	path = dotbot-vscode
 	url = https://github.com/hujianxin/dotbot-vscode
