@@ -3,6 +3,12 @@
     ~/.gitconfig:
       path: gitconfig
       force: true
+    ~/.bashrc:
+      path: bashrc
+      force: true
+    ~/.bash_profile:
+      path: bash_profile
+      force: true
 
 - snap-classic:
   - code
@@ -34,5 +40,6 @@
     lsb-release:
     gnupg:
     htop:
+    neofetch:
 - shell: 
   - [./scripts/install-azure-cli.sh, Installing Azure Cli]
