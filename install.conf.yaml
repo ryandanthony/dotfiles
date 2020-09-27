@@ -41,5 +41,12 @@
     gnupg:
     htop:
     neofetch:
-- shell: 
-  - [./scripts/install-azure-cli.sh, Installing Azure Cli]
+    golang-go:
+- go:
+  - package: github.com/justjanne/powerline-go
+    flags: [-v, -u]
+    stdout: true
+    stderr: true
+- shell:
+  - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
+  - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]

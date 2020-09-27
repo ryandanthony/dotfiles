@@ -2,5 +2,5 @@
 
 set -e
 git submodule sync --quiet --recursive
-git submodule update --init --recursive 
-./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -d "${BASEDIR}" -c install.conf.yaml "${@}"
+git submodule update --init --recursive
+./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}" -c install.conf.yaml "${@}"
