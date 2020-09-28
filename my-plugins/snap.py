@@ -6,10 +6,10 @@ import dotbot
 
 
 class Snap(dotbot.Plugin):
-    def can_handle(self, directive) -> bool:
+    def can_handle(self, directive):
         return directive == 'snap' or directive == 'snap-classic'
 
-    def handle(self, directive, packages) -> bool:
+    def handle(self, directive, packages):
         use_classic = False
         if directive == 'snap-classic':
             use_classic = True
@@ -25,7 +25,7 @@ class Snap(dotbot.Plugin):
 
         return success
 
-    def _run(self, command, log_message) -> bool:
+    def _run(self, command, log_message):
         self._log.lowinfo(log_message)
         try:
             check_call(command)
