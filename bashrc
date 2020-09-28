@@ -123,3 +123,6 @@ function _update_ps1() {
 if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+. ~/.docker-completion.sh
+. ~/.docker-compose-completion.sh

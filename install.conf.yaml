@@ -9,8 +9,11 @@
     ~/.bash_profile:
       path: bash_profile
       force: true
-    /etc/bash_completion.d/docker-compose:
-      path: bash_completion.d/docker-compose
+    ~/.docker-compose-completion.sh:
+      path: bash_completion/docker-compose
+      force: true
+    ~/.docker-completion.sh:
+      path: bash_completion/docker
       force: true
 - vscode:
     eamodio.gitlens:

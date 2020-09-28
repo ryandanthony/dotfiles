@@ -1,8 +1,4 @@
 - clean: []
-- link:
-    /etc/bash_completion.d/docker-compose:
-      path: bash_completion.d/docker-compose
-      force: true
 - snap-classic:
   - code
   - rider
