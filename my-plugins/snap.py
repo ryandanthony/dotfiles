@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from subprocess import CalledProcessError, check_call
-from typing import Any, List, Sequence
+#from typing import Any, List, Sequence
 
 import dotbot
 
