@@ -9,23 +9,6 @@
     ~/.bash_profile:
       path: bash_profile
       force: true
-
-- snap-classic:
-  - code
-  - rider
-  - datagrip
-  - helm
-  - dotnet-sdk
-  - microk8s
-  - powershell
-- snap:
-  - hiri
-  - chromium
-  - chromium-ffmpeg
-  - htop
-  - postman
-  - docker
-  - drawio
 - vscode:
     eamodio.gitlens:
         status: install
@@ -33,20 +16,8 @@
     EditorConfig.EditorConfig:
         status: install
         insiders: false
-- aptget:
-    ca-certificates:
-    curl:
-    apt-transport-https:
-    lsb-release:
-    gnupg:
-    htop:
-    neofetch:
-    golang-go:
 - go:
   - package: github.com/justjanne/powerline-go
     flags: [-v, -u]
     stdout: true
     stderr: true
-- shell:
-  - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
-  - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]
