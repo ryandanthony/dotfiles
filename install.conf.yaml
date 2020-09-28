@@ -9,6 +9,9 @@
     ~/.bash_profile:
       path: bash_profile
       force: true
+    /etc/bash_completion.d/docker-compose:
+      path: bash_completion.d/docker-compose
+      force: true
 - vscode:
     eamodio.gitlens:
         status: install
