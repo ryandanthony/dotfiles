@@ -1,8 +1,21 @@
 #!/usr/bin/env bash
 
 set -e
+priv_flag=0
+
+while getopts 'p' flag; do
+  case "${flag}" in
+    p) priv_flag=1 ;;
+  esac
+done
+
 git submodule sync --quiet --recursive
 git submodule update --init --recursive
 
-sudo ./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}" -c install-priv.conf.yaml "${@}"
-./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}" -c install.conf.yaml "${@}"
+if [[ $priv_flag -eq 1 ]]
+then
+    echo "############################# Running install-priv.conf.yaml #############################"
+    sudo ./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}" -c install-priv.conf.yaml
+fi
+echo "############################# Running install.conf.yaml #############################"
+./dotbot/bin/dotbot -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}" -c install.conf.yaml
