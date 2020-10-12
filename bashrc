@@ -126,3 +126,5 @@ fi
 
 . ~/.docker-completion.sh
 . ~/.docker-compose-completion.sh
+
+source ~/.jfrog/jfrog_bash_completion

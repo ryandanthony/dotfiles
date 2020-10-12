@@ -15,6 +15,9 @@
     ~/.docker-completion.sh:
       path: bash_completion/docker
       force: true
+    ~/.jfrog/jfrog_bash_completion:
+      path: bash_completion/jfrog_bash_completion
+      force: true
 - vscode:
     eamodio.gitlens:
         status: install
