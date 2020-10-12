@@ -15,6 +15,7 @@
   - postman
   - docker
   - drawio
+  - jq
 - aptget:
     ca-certificates:
     curl:
