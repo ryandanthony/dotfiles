@@ -24,8 +24,9 @@
     gnupg:
     htop:
     neofetch:
-    golang-go:
+    #golang-go:
 - shell:
   - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
   - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]
   - [./scripts/ubuntu/install-jfrog-cli.sh, Installing JFrog Cli]
+  - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]

@@ -31,8 +31,8 @@
     EditorConfig.EditorConfig:
         status: install
         insiders: false
-- go:
-  - package: github.com/justjanne/powerline-go
-    flags: [-v, -u]
-    stdout: true
-    stderr: true
+# - go:
+#   - package: github.com/justjanne/powerline-go
+#     flags: [-v, -u]
+#     stdout: true
+#     stderr: true
