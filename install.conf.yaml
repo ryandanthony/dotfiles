@@ -18,6 +18,12 @@
     ~/.jfrog/jfrog_bash_completion:
       path: bash_completion/jfrog_bash_completion
       force: true
+    ~/.config/powershell/Microsoft.PowerShell_profile.ps1:
+      path: powershell_profile.ps1
+      force: true
+    ~/.config/powershell/Microsoft.VSCode_profile.ps1:
+      path: powershell_profile.ps1
+      force: true
 - vscode:
     eamodio.gitlens:
         status: install
