@@ -8,6 +8,7 @@
   - microk8s
   - powershell
   - gitkraken
+  - node
 - snap:
   - hiri
   - chromium
@@ -32,3 +33,4 @@
   - [./scripts/ubuntu/install-jfrog-cli.sh, Installing JFrog Cli]
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
   - [./scripts/ubuntu/install-keybase-io.sh, Installing Keybase.io]
+  - [./scripts/ubuntu/install-nodejs.sh, Installing nodejs]
