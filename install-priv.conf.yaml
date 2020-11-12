@@ -7,6 +7,7 @@
   - dotnet-sdk
   - microk8s
   - powershell
+  - gitkraken
 - snap:
   - hiri
   - chromium
@@ -30,3 +31,4 @@
   - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]
   - [./scripts/ubuntu/install-jfrog-cli.sh, Installing JFrog Cli]
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
+  - [./scripts/ubuntu/install-keybase-io.sh, Installing Keybase.io]
