@@ -31,6 +31,9 @@
     EditorConfig.EditorConfig:
         status: install
         insiders: false
+    svelte.svelte-vscode:
+        status: install
+        insiders: false
 # - go:
 #   - package: github.com/justjanne/powerline-go
 #     flags: [-v, -u]
