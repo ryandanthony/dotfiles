@@ -27,6 +27,8 @@
     htop:
     neofetch:
     curl:
+    fonts-powerline:
+    gconf2:
     #golang-go:
 - shell:
   - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
@@ -35,3 +37,4 @@
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
   - [./scripts/ubuntu/install-keybase-io.sh, Installing Keybase.io]
   - [./scripts/ubuntu/install-nodejs.sh, Installing nodejs]
+  - [./scripts/ubuntu/setup-fonts.sh, Setting Up Default Fonts]

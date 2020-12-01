@@ -2,6 +2,7 @@
 - create:
     - ~/.config/powershell/
     - ~/.jfrog/
+    - ~/.config/Code/User/
 - link:
     ~/.gitconfig:
       path: gitconfig
@@ -26,6 +27,9 @@
       force: true
     ~/.config/powershell/Microsoft.VSCode_profile.ps1:
       path: powershell_profile.ps1
+      force: true
+    ~/.config/Code/User/settings.json:
+      path: vscode_profile.json
       force: true
 - vscode:
     eamodio.gitlens:
