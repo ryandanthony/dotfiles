@@ -1,4 +1,7 @@
 - clean: []
+- create:
+    - ~/.config/powershell/
+    - ~/.jfrog/
 - link:
     ~/.gitconfig:
       path: gitconfig
