@@ -26,6 +26,7 @@
     gnupg:
     htop:
     neofetch:
+    curl:
     #golang-go:
 - shell:
   - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
