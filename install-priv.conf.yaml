@@ -7,14 +7,14 @@
   - dotnet-sdk
   - microk8s
   - powershell
-  - gitkraken
-  - node
+    # - gitkraken
+    # - node
 - snap:
-  - hiri
+        #- hiri
   - chromium
   - chromium-ffmpeg
   - htop
-  - postman
+    #  - postman
   - docker
   - drawio
   - jq
@@ -31,10 +31,10 @@
     gconf2:
     golang-go:
 - shell:
-  - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
+        #  - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
   - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]
-  - [./scripts/ubuntu/install-jfrog-cli.sh, Installing JFrog Cli]
+    #  - [./scripts/ubuntu/install-jfrog-cli.sh, Installing JFrog Cli]
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
-  - [./scripts/ubuntu/install-keybase-io.sh, Installing Keybase.io]
-  - [./scripts/ubuntu/install-nodejs.sh, Installing nodejs]
+    #  - [./scripts/ubuntu/install-keybase-io.sh, Installing Keybase.io]
+    #  - [./scripts/ubuntu/install-nodejs.sh, Installing nodejs]
   - [./scripts/ubuntu/setup-fonts.sh, Setting Up Default Fonts]
