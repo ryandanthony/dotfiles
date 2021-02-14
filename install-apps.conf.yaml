@@ -1,0 +1,6 @@
+- clean: []
+- snap-classic:
+- snap:
+  - hiri
+  - chromium
+  - chromium-ffmpeg
