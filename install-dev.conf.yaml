@@ -1,0 +1,7 @@
+- clean: []
+- snap-classic:
+  - rider
+  - datagrip
+  - dotnet-sdk
+  - gitkraken
+  - node
