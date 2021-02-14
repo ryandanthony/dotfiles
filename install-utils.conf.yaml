@@ -3,6 +3,7 @@
   - code
   - microk8s
   - helm
+  - kubectl
   - powershell
 - snap:
   - htop
