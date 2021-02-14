@@ -10,6 +10,9 @@
     ~/.bashrc:
       path: bashrc
       force: true
+    ~/.fonts:
+      path: fonts
+      force: true
     ~/.bash_profile:
       path: bash_profile
       force: true
@@ -43,3 +46,4 @@
         insiders: false
 - shell:
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
+  - [./scripts/ubuntu/setup-fonts.sh, Setting Up Default Fonts]
