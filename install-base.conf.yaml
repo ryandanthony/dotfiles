@@ -1,0 +1,5 @@
+- clean: []
+- aptget:
+    fonts-powerline:
+    gconf2:
+    golang-go:

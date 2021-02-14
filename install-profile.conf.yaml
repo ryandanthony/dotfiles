@@ -41,8 +41,5 @@
     svelte.svelte-vscode:
         status: install
         insiders: false
-# - go:
-#   - package: github.com/justjanne/powerline-go
-#     flags: [-v, -u]
-#     stdout: true
-#     stderr: true
+- shell:
+  - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]

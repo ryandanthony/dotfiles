@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 set -e
-profile_flag=0
+
 utils_flag=0
+profile_flag=0
 apps_flag=0
 dev_flag=0
 
 while [[ $# -gt 0 ]]; do
   case $1 in
-      -p|--profile) profile_flag=1;;
       -u|--utils) utils_flag=1;;
+      -p|--profile) profile_flag=1;;
       -a|--apps) apps_flag=1;;
       -d|--dev) dev_flag=1;;
       *) echo "Unknown parameter passed: $1"; exit 1;;
@@ -20,15 +21,18 @@ done
 git submodule sync --quiet --recursive
 git submodule update --init --recursive
 
-if [[ $profile_flag -eq 1 ]]
-then
-  echo "############################# Running install-profile.conf.yaml #############################"
-  ./dotbot/bin/dotbot  -c install-profile.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
-fi
+echo "############################# Running install-base.conf.yaml #############################"
+sudo ./dotbot/bin/dotbot  -c install-base.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
+
 if [[ $utils_flag -eq 1 ]]
 then
     echo "############################# Running install-utils.conf.yaml #############################"
     sudo ./dotbot/bin/dotbot  -c install-utils.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
+fi
+if [[ $profile_flag -eq 1 ]]
+then
+  echo "############################# Running install-profile.conf.yaml #############################"
+  ./dotbot/bin/dotbot  -c install-profile.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
 fi
 if [[ $apps_flag -eq 1 ]]
 then

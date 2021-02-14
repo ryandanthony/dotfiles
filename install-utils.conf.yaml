@@ -3,12 +3,12 @@
   - code
   - microk8s
   - helm
-  - powershell  
+  - powershell
 - snap:
   - htop
   - postman
   - jq
-  - drawio  
+  - drawio
   - docker
 - aptget:
     ca-certificates:
@@ -17,10 +17,9 @@
     lsb-release:
     gnupg:
     neofetch:
-    curl:
     fonts-powerline:
     gconf2:
-    golang-go:    
+    golang-go:
 - shell:
   - [./scripts/ubuntu/install-azure-cli.sh, Installing Azure Cli]
   - [./scripts/ubuntu/install-gh-cli.sh, Installing GitHub Cli]
