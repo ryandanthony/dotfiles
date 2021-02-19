@@ -1,4 +1,10 @@
 {
     "editor.fontFamily": "'JetBrains Mono for Powerline', 'monospace', monospace, 'PowerlineSymbols'",
-    "terminal.integrated.fontFamily": "'JetBrains Mono for Powerline', 'monospace', monospace, 'PowerlineSymbols'"
+    "terminal.integrated.fontFamily": "'JetBrains Mono for Powerline', 'monospace', monospace, 'PowerlineSymbols'",
+    "vs-kubernetes": {
+        "vs-kubernetes.knownKubeconfigs": [
+            "~/.kube/config"
+        ],
+        "vs-kubernetes.kubeconfig": "~/.kube/config"
+    }
 }

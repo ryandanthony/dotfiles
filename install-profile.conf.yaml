@@ -44,6 +44,45 @@
     svelte.svelte-vscode:
         status: install
         insiders: false
+    ms-kubernetes-tools.vscode-kubernetes-tools:
+        status: install
+        insiders: false
+    ms-vscode.powershell:
+        status: install
+        insiders: false
+    ms-azuretools.vscode-docker:
+        status: install
+        insiders: false
+    visualstudioexptteam.vscodeintellicode:
+        status: install
+        insiders: false
+    ms-toolsai.jupyter:
+        status: install
+        insiders: false
+    ms-vscode.azure-account:
+        status: install
+        insiders: false
+    msazurermtools.azurerm-vscode-tools:
+        status: install
+        insiders: false
+    ms-azuretools.vscode-cosmosdb:
+        status: install
+        insiders: false
+    ms-kubernetes-tools.vscode-aks-tools:
+        status: install
+        insiders: false
+    ms-ossdata.vscode-postgresql:
+        status: install
+        insiders: false
+    ms-vscode.azurecli:
+        status: install
+        insiders: false
+    github.vscode-pull-request-github:
+        status: install
+        insiders: false
+    golang.go:
+        status: install
+        insiders: false
 - shell:
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
   - [./scripts/ubuntu/setup-fonts.sh, Setting Up Default Fonts]
