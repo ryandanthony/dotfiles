@@ -1,5 +1,6 @@
 - clean: []
 - aptget:
+    lsb-release:
     fonts-powerline:
     gconf2:
     golang-go:

@@ -6,5 +6,6 @@
             "~/.kube/config"
         ],
         "vs-kubernetes.kubeconfig": "~/.kube/config"
-    }
+    },
+    "git.autofetch": true
 }

@@ -2,6 +2,8 @@
 - snap-classic:
   - rider
   - datagrip
-  - dotnet-sdk
   - gitkraken
   - node
+- shell:
+  - [./scripts/ubuntu/install-dotnet-sdks.sh, Installing Dotnet Sdks]
+  - [./scripts/ubuntu/install-az-func-sdks.sh, Installing Az Func Sdks]
