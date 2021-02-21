@@ -4,3 +4,8 @@
   - hiri
   - chromium
   - chromium-ffmpeg
+- aptget:
+    fonts-liberation:
+    xdg-utils:
+- shell:
+  - [./scripts/ubuntu/install-chrome.sh, Installing Chrome]
