@@ -9,3 +9,4 @@
     xdg-utils:
 - shell:
   - [./scripts/ubuntu/install-chrome.sh, Installing Chrome]
+  - [./scripts/ubuntu/install-joplin.sh, Installing Joplin]
