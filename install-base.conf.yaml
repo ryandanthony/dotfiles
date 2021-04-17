@@ -4,3 +4,7 @@
     fonts-powerline:
     gconf2:
     golang-go:
+- link:
+    /etc/sysctl.d/limit.conf:
+      path: limitconf
+      force: true
