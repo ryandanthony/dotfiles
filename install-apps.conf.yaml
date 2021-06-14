@@ -2,8 +2,7 @@
 - snap-classic:
 - snap:
   - hiri
-  - chromium
-  - chromium-ffmpeg
+  - remmina
 - aptget:
     fonts-liberation:
     xdg-utils:

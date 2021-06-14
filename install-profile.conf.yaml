@@ -85,4 +85,3 @@
         insiders: false
 - shell:
   - [./scripts/ubuntu/install-powerline-go.sh, Installing Powerline Go]
-  - [./scripts/ubuntu/setup-fonts.sh, Setting Up Default Fonts]

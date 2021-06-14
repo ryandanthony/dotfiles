@@ -29,6 +29,11 @@ then
     echo "############################# Running install-utils.conf.yaml #############################"
     sudo ./dotbot/bin/dotbot  -c install-utils.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
 fi
+if [[ $dev_flag -eq 1 ]]
+then
+  echo "############################# Running install-dev.conf.yaml #############################"
+  ./dotbot/bin/dotbot  -c install-dev.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
+fi
 if [[ $profile_flag -eq 1 ]]
 then
   echo "############################# Running install-profile.conf.yaml #############################"
@@ -39,8 +44,4 @@ then
     echo "############################# Running install-apps.conf.yaml #############################"
     sudo ./dotbot/bin/dotbot  -c install-apps.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
 fi
-if [[ $dev_flag -eq 1 ]]
-then
-  echo "############################# Running install-profile.conf.yaml #############################"
-  ./dotbot/bin/dotbot  -c install-dev.conf.yaml -p dotbot_plugin_aptget/aptget.py --plugin-dir dotbot-vscode -p my-plugins/snap.py -p dotbot-golang/go.py -d "${BASEDIR}"
-fi
+
