@@ -1,9 +1,9 @@
 - clean: []
 - aptget:
     lsb-release:
-    fonts-powerline:
-    gconf2:
-    golang-go:
+    apt-transport-https:
+    ca-certificates:
+    curl:
 - link:
     /etc/sysctl.d/limit.conf:
       path: limitconf

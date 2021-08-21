@@ -1,7 +1,0 @@
-- clean: []
-- snap-classic:
-  - code
-  - rider
-  - datagrip
-  - goland
-  - node

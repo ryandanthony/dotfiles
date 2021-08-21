@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt-get install nodejs -y
-node --version
-npm --version
+
+if which node > /dev/null
+then
+    echo "node is installed, skipping..."
+else
+    sudo curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+    sudo apt-get install nodejs -y
+fi
